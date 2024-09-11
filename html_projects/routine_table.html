@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Linus Torvalds.jpeg">
+
+    <style>
+        
+        /* jitna v table bna h iss file me or jitne v row h ,col h
+         sbko syle krega */
+         table  ,td ,th{
+            border:2px solid black ;
+            border-collapse : collapse ;
+        }
+        td .hello{
+            border: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table2</title>
+</head>
+<body>
+
+    <table style=" height: 100%;">
+        <tr>
+            <th rowspan="3">Day </th>
+            <!-- <th>Aditya</th> -->
+            <th colspan="4">Seminar</th>
+            
+        </tr>
+        <tr>
+            <th colspan="2">schdule</th>
+            <th rowspan="2" colspan="2"> topic</th>
+        </tr>
+        <tr>
+            <th>begin</th>
+            <th>end</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2" style="background-color: yellow;">8 :00 am </td>
+            <td rowspan="2" style="background-color: rgb(203, 133, 203);">5 :00 am </td>
+            <td>introduction to html </td>
+        </tr>
+        <tr>
+            <td>validity: Dtd and relax </td>
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td style="background-color: yellow;">8:00 am</td>
+            <td style="background-color: yellow;">11:00 am</td>
+            <td colspan="2" style="width: 40px;" style="border-bottom: none;">xpath</td>
+             
+        </tr>
+        <tr>
+            <td style="background-color: yellow;">11:00 am</td>
+            <td style="background-color: greenyellow;">2:00 am</td>
+            
+        </tr>
+        <tr>
+            <td style="background-color: greenyellow;">2:00 am</td>
+            <td  style="background-color: rgb(203, 133, 203);">5 :00 am </td>
+            <td  colspan="2" style="border-top: none;">xls tranformation </td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td style="background-color: greenyellow;">8:00 am</td>
+            <td style="background-color: greenyellow;">12:00 am</td>
+            <td>xls formatiing docs</td>
+            
+        </tr>
+    </table>
+</body>
+</html>
