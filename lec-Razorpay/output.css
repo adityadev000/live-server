@@ -1986,6 +1986,26 @@ video {
   }
 }
 
+
+.zigzag:hover img{
+  background-color: deepskyblue;
+}
+
+.mysvg{
+  opacity: 0;
+  transition: all 200ms;
+}
+
+.zigzag:hover .mysvg {
+  opacity: 1;
+}
+
+.line{
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+
 @media (min-width: 1280px) {
   .xl\:order-1 {
     order: 1;
