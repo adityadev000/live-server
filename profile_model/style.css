@@ -244,7 +244,7 @@ img{
 @media(max-width: 450px ) {
     
     .card-wrapper{
-        width: 50vw;
+        width: 85vw;
     }
     .card-wrapper img{
         width: 120px;
@@ -261,13 +261,7 @@ img{
         font-size: 10px;
     }
 }
-@media(max-width: 350px ) {
-    
-    .card-wrapper{
-        width: 40vw;
-    }
-    
-}
+
 @media(max-width: 850px ) {
     
     .modal{
