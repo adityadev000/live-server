@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+        
+            <div class="card-wrapper">
+
+                <img src="./image/WhatsApp Image 2024-05-09 at 21.16.02.jpeg" alt="" width="160rem" height="155rem">
+                <h1 class="name">Aditya Dev</h1>
+                <p class="designation">Student , Nit Dgp</p>
+
+                <div class="button-grp">
+                    <button onclick="openmodal()" class="share">
+                        <i class="fa-solid fa-share"></i>
+                        <p>Share my Profile</p>
+                    </button>
+                    <button>
+                        <p>Follow Me</p>
+                    </button>
+                </div>
+            </div>
+
+
+        <!-- modal component -->
+        
+        <div class="modal">
+
+            <div class="modal-header">
+                <h1>Share My Profile</h1>
+
+                <div>
+
+                    <i onclick="closemodal()" class="fa-solid fa-xmark close "></i>
+                </div>
+            </div>
+            
+            
+            <div>
+                <h3 id="text">Share this via</h3>
+                <div class="iconcontainer">
+                    <a href="https://www.linkedin.com/in/aditya-dev-326138289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon" id="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="icon" id="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/adityadev0/profilecard/?igsh=cmRsamVxdmp5Zmkz" target="_blank" class="icon" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="icon" id="Whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="./telegram.html" target="_blank" class="icon" id="telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+<!-- Overlay -->
+<div class="overlay" onclick="closemodal()"></div>
+
+
+
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

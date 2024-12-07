@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: #000;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circle1{
+    position: fixed;
+    top: 5%;
+    left: 30%;
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg , #d84869 , #f46641);
+    animation: circleanimate 15s infinite; 
+    z-index: ;
+
+}
+@keyframes circleanimate {
+    50% {
+        left: 33%;
+        top: 4%;
+        scale: 1.11;
+    }
+}
+
+.circle2 {
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+    width: 19em;
+    height: 19em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    animation: circle2Animate 8s infinite;
+}
+@keyframes circle2Animate {
+    50% {
+    bottom: 6%;
+    right: 31%;
+    }
+}
+
+.card-wrapper{
+    backdrop-filter: blur(15px);
+    border: 2px solid #ffffff30;
+    border-radius: 0.5rem;
+    background-color: #ffffff1a;
+    padding: 3.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2.5rem;
+    
+}
+img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.name{
+    color: aliceblue;
+    font-size: 2rem;
+}
+.designation{
+    color: #ffffff85;
+    font-weight:bolder;
+    font-size: 1.3rem;
+}
+.button-grp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+.button-grp button{
+    color: #ffffff85;
+    background-color: #ffffff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffffffb9;
+    padding: 0.7em 0.6em;
+    width: 11em;
+    border-radius: 0.25em;
+    text-align: center;
+    margin: 0 ,auto;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.button-grp button:hover{
+    background: #ffffffb9;
+    color: #131313;
+}
+.share{
+    display: flex;
+    gap: 0.25em;
+
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 2px solid #ffffff59;
+    background: #00000088;
+    border-radius:20px ;
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease-in-out;
+    z-index: 1;
+    padding: 20px 25px;
+    width: 500px; 
+    scale: 0;
+
+}
+
+.modal-header{
+    color:white ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ffffff88;
+
+}
+.close{
+    font-size: 30px;
+    cursor: pointer;
+}
+#text{
+    color: white;
+    margin-bottom: 25px;
+}
+.iconcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+.icon{
+    border: 1px solid #ffffff88;
+    padding: 17px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 10px 0px;
+    transition: all 0.5s;
+    margin-bottom: 25px;
+    text-decoration: none;
+    column-gap: 20px;
+}
+.icon i {
+    font-size: 27px;
+}
+
+#linkedin{
+    color: #1771e6;
+    border: 1px solid #1771e6;
+}
+#linkedin:hover{
+    background-color: #1771e6;
+    color: #fff;
+}
+
+#twitter{
+    color: #1c99e6;
+    border: 1px solid #1c99e6;
+}
+#twitter:hover{
+    background-color: #1c99e6;
+    color: #fff;
+}
+#instagram{
+    color: #cb2770;
+    border: 1px solid #cb2770;
+}
+#instagram:hover{
+    background-color: #cb2770;
+    color: #fff;
+}
+#Whatsapp{
+    color: #2fe664;
+    border: 1px solid #2fe664;
+}
+#Whatsapp:hover{
+    background-color: #2fe664;
+    color: #fff;
+}
+#telegram{
+    color: #0081c2;
+    border: 1px solid #0081c2;
+}
+#telegram:hover{
+    background-color: #0081c2;
+    color: #fff;
+}
+.active{
+    scale: 1;
+}
+.overlay{
+    position: fixed;
+    background-color: #5f5f5f83;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+
+
+}
+.overlayactive{
+    opacity: 1; 
+    pointer-events: initial;
+}
+
+@media(max-width: 450px ) {
+    
+    .card-wrapper{
+        width: 50vw;
+    }
+    .card-wrapper img{
+        width: 120px;
+        height: 120px;
+
+    }
+    .button-grp{
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{
+        height: 20px;
+        width: 20px;
+        font-size: 10px;
+    }
+}
+@media(max-width: 350px ) {
+    
+    .card-wrapper{
+        width: 40vw;
+    }
+    
+}
+@media(max-width: 850px ) {
+    
+    .modal{
+        width: 70vw;
+    }
+    
+}
