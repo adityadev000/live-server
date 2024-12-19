@@ -33,6 +33,7 @@
 .pura-body{
     width: 600px;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .search-box{
     display: flex;
@@ -245,6 +246,15 @@
     }
     .name{
         font-size: 0.8rem;
+    }
+    .user-id{
+        font-size: 0.5rem;
+    }
+    .joined{
+        font-size: 0.6rem;
+    }
+    .info{
+        font-size: 0.7rem;
     }
     .data{
         flex-wrap: wrap;
