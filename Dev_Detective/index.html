@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV Detective</title>
+
+    <!-- fevicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <!-- <link rel="manifest" href="./assets/site.webmanifest"> -->
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+<!-- header -->
+            <div class="header">
+                <p class="heading">DevDetective</p>
+                <div class="Theme" > 
+                    <p class="light-dark"></p>
+                    <img class="theme-img" alt="" width="18px " height="18px">
+                </div>
+            </div>
+
+            <div class="pura-body">
+
+                <!-- searchbar -->
+                <div class="search-box">
+                    <img src="./assets/images/search-icon.svg" alt="" height="17px" width="17px">
+
+                    <form formbar>
+                        <input  type="search" placeholder="Enter a GitHub username..." class="search-bar"  required>
+                    </form>
+                    <button class="crossbtn">X</button>
+                    <button type="submit" class="search-btn">Search</button>
+                        
+                        <p class="search-result" >no search result</p>
+                </div>
+    
+                <!-- content box -->
+                <div class="content">
+    
+                    <!-- intro -->
+                    <div class="intro">
+                        <img class="user-image" >
+
+                        <div class="intro2">
+
+                            <div class="name-date">
+                                <div>
+                                    <h2 class="name"></h2>
+                                    <a target="_blank" class="user-id"></a>
+                                </div>
+                                <div>
+
+                                    <p class="joined"></p>
+                                </div>
+                            </div>
+        
+        
+                            <p class="info"></p>
+                            <!-- data -->
+                            <div class="data">
+                                <div class="div1">
+                                    <p class="repos-para" style="font-size: 0.7rem; margin-bottom: 10px;">Repos</p>
+                                    <p class="repos-data" style="font-size: 1.1rem; font-weight: 700;"></p>
+                                </div>
+                                <div class="div2">
+                                    <p class="followers-para" style="font-size: 0.7rem;margin-bottom: 10px;">Followers</p>
+                                    <p class="followers-data" style="font-size: 1.1rem; font-weight: 700;"></p>
+                                </div>
+                                <div class="div3">
+                                    <p class="following-para" style="font-size: 0.7rem;margin-bottom: 10px;">Following</p>
+                                    <p class="following-data"style="font-size: 1.1rem; font-weight: 700;"></p>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="more-infoDiv">
+                                <div class="more-info" style="display: flex;">
+                                    <img class="icons" src="./assets/images/location-icon.svg"  alt="">
+                                    <p class="location"></p>
+                                </div>
+                                <div class="more-info" style="display: flex;">
+                                    <img class="icons" src="./assets/images/website-icon.svg" alt="" height="10px" width="10px">
+                                    <a href="#" class="website"></a>
+                                </div>
+                                <div class="more-info"style="display: flex;">
+                                    <img class="icons" src="./assets/images/twitter-icon.svg" alt=""height="10px" width="10px">
+                                    <a target="_blank" class="twitter"></a>
+                                </div>
+                                <div class="more-info"style="display: flex;">
+                                    <img class="icons" src="./assets/images/company-icon.svg" alt=""height="10px" width="10px">
+                                    <p class="company"></p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+    
+    
+                </div>
+            </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d14b60b758.js" crossorigin="anonymous"></script>
+</body>
+</html>

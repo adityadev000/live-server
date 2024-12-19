@@ -1,0 +1,269 @@
+*,*::after,*::before{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    margin-top: 4rem;
+}
+.heading{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.Theme{
+    display: flex;
+    gap: 1rem;
+}
+.light-dark{
+    font-size: 0.8rem;
+}
+.pura-body{
+    width: 600px;
+    margin-top: 2rem;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+    position: relative;
+}
+.search-result{
+    color: red;
+    font-size: 0.8rem;
+    font-weight: 700;
+    position: absolute;
+    right: 18%;
+    display: none;
+}
+.search-result.active{
+    display: block;
+}
+.search-btn{
+    color: white;
+    background-color: #0079ff;
+    padding:0.8rem 1.3rem;
+    border-radius: 0.4rem;
+    border: none;
+    position: absolute ;
+    top: 7px;
+    right: 7px;
+}
+
+
+
+.crossbtn{
+    display: none;
+}
+.crossbtn.active{
+    display: flex;
+}
+.search-bar{
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    background-color: transparent;
+    width: 350px;
+}
+.search-bar::placeholder{
+    color: white; 
+}
+.new-placeholder-color::placeholder{
+    color: rgba(0, 0, 0, 0.65);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.content{
+    border-radius: 0.4rem;
+}
+.intro{
+    position: relative;
+    padding: 2rem;
+    /* justify-content: space-between; */
+    box-shadow: 0 0.9rem 1rem rgba(0, 0, 0, 0.25); /* Shadow at the bottom */
+
+}
+.user-image{
+    border-radius: 50%;
+    align-self: flex-start;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+.intro2{
+    margin-left: 10rem;
+}
+.name-date{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+    padding-top: 1rem;
+
+}
+.name{
+    font-size: 1.3rem;
+    margin-right: 3rem;
+    align-self: flex-start;
+}
+.joined{
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.user-id{
+    font-size: 0.8rem;
+}
+.info{
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+}
+
+.data{
+    display: flex;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-radius: 0.4rem;
+    gap: 3.5rem;
+}
+
+
+.more-info img{
+
+
+
+    filter: invert(100%) brightness(300%);
+    
+    height: 15px;
+    width: 15px;
+    object-fit: contain;
+    margin-right: 10px;
+    
+}
+.more-info img.active{
+    filter:none
+}
+.more-info img.nonactive{
+    filter: invert(43%) sepia(8%) saturate(184%) hue-rotate(180deg) brightness(100%) contrast(88%);
+}
+.more-infoDiv{
+    padding: 2rem  2rem 0px 1rem;
+    font-size: 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin-bottom: 0;
+
+}
+
+
+@media (max-width:760px) {
+    .wrapper{
+        overflow-y: auto;
+    }
+    .header{
+        width: 350px;
+    }
+    .pura-body{
+        width: 350px;
+    }
+    .user-image{
+        height: 60px;
+        width: 60px;
+    }
+    .name-date{
+        margin-left: 5.5rem;
+    }
+    .name{
+        font-size: 1.1rem;
+        padding: 0;
+    }
+
+    .joined{
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+    .intro2{
+        margin:0  auto;
+    }
+
+    .data{
+
+        gap: 2rem;
+    }
+
+    .more-infoDiv{
+        font-size: 0.9rem;
+
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+    .search-bar{
+        width: 220px;
+    }
+
+    .search-result.active{
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    .header{
+        width: 80%;
+    }
+    .pura-body{
+        width: 80%;
+    }
+    .heading{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .name{
+        font-size: 0.8rem;
+    }
+    .data{
+        flex-wrap: wrap;
+        gap: 1rem;
+
+    }
+
+    .search-bar{
+        width: 75%;
+    }
+    .search-bar::placeholder{
+        font-size: 8px;
+    }
+
+    .more-infoDiv{
+        font-size: 0.6rem;
+    }
+
+}
+
+
+
