@@ -17,7 +17,7 @@ const Theme = document.querySelector(".Theme") ;
 const lightDark = document.querySelector(".light-dark") ;
 const themeImg = document.querySelector(".theme-img") ;
 const icons = document.querySelectorAll(".icons") ;
-const formBar = document.querySelectorAll("[formbar]") ;
+const formBar = document.querySelector(".formbar") ;
 
 
 
@@ -249,15 +249,18 @@ function renderData (data){
 
 }
 
-function searchUser(){
+function searchUser(event){
+    event.preventDefault() ; 
 
-    user = searchBar.value ; 
+    user = searchBar.value; 
+
+    console.log(user);
 
     if(user != "" || user != null  ) ; 
-        getData(user)  ;
+    getData(user)  ;
 }
 
-searchBtn.addEventListener("click" , searchUser) ; 
+formBar.addEventListener("submit" , searchUser) ; 
 
 
 function handleChange() {
